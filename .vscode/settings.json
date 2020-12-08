@@ -1,11 +1,11 @@
 {
-    "go.inferGopath": true,
+    "go.inferGopath": false,
     "go.autocompleteUnimportedPackages": true,
     "go.gocodePackageLookupMode": "go",
     "go.gotoSymbol.includeImports": true,
     "go.useCodeSnippetsOnFunctionSuggest": true,
     "go.useCodeSnippetsOnFunctionSuggestWithoutType": true,
     "go.docsTool": "gogetdoc",
-    "go.goroot": "/Users/zhongxiaoping/go",
-    "go.gopath": "/Users/zhongxiaoping/gopath"
+    "go.goroot": "C:/Users/keda/scoop/apps/go/current",
+    "go.gopath": "C:/Users/keda/go"
 }

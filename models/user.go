@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"github.com/astaxie/beego"
 	"github.com/astaxie/beego/orm"
+	_ "github.com/lib/pq"
 )
 
 type User struct {
@@ -28,8 +29,9 @@ type Tag struct {
 
 func init() {
 	sqlConn := beego.AppConfig.String("sqlconn")
-	orm.RegisterDriver("mysql", orm.DRMySQL)
-	err := orm.RegisterDataBase("default", "mysql", sqlConn)
+	//orm.RegisterDriver("mysql", orm.DRMySQL)
+	orm.RegisterDriver("postgres", orm.DRPostgres)
+	err := orm.RegisterDataBase("default", "postgres", sqlConn)
 	if err != nil{
 		fmt.Print("连接失败")
 	}

@@ -3,13 +3,12 @@ package test
 import (
 	"net/http"
 	"net/http/httptest"
-	"testing"
-	"runtime"
 	"path/filepath"
 	_ "rest-api/routers"
+	"runtime"
+	"testing"
 
 	"github.com/astaxie/beego"
-	. "github.com/smartystreets/goconvey/convey"
 )
 
 func init() {
